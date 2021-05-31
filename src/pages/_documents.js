@@ -1,17 +1,26 @@
 import Document from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
+import * as Sentry from '@sentry/node';
 
-export default class MyDocument extends Document {
+process.on('unhandledRejection', (err) => {
+    Sentry.captureException(err);
+});
+
+process.on('uncaughtException', (err) => {
+    Sentry.captureException(err);
+});
+
+export default class AppDocument extends Document {
     static async getInitialProps(ctx) {
         const sheet = new ServerStyleSheet()
-        const originalRenderPage = ctx.renderPage
+        const originalRenderPage = ctx.renderPage;
 
         try {
             ctx.renderPage = () =>
                 originalRenderPage({
                     enhanceApp: (App) => (props) =>
                         sheet.collectStyles(<App {...props} />),
-                })
+                });
 
             const initialProps = await Document.getInitialProps(ctx)
             return {
@@ -22,9 +31,11 @@ export default class MyDocument extends Document {
                         {sheet.getStyleElement()}
                     </>
                 ),
-            }
+            };
+        } catch(err) {
+            Sentry.captureException(err);
         } finally {
-            sheet.seal()
+            sheet.seal();
         }
     }
 }
