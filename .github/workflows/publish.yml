@@ -26,6 +26,7 @@ jobs:
       - run: npm run build
         env:
             CI: true
+            NODE_ENV: pages
 
       - name: Add .nojekyll
         run: touch out/.nojekyll
