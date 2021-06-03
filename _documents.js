@@ -1,14 +1,5 @@
 import Document from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import * as Sentry from '@sentry/node';
-
-process.on('unhandledRejection', (err) => {
-    Sentry.captureException(err);
-});
-
-process.on('uncaughtException', (err) => {
-    Sentry.captureException(err);
-});
 
 export default class AppDocument extends Document {
     static async getInitialProps(ctx) {
@@ -33,7 +24,7 @@ export default class AppDocument extends Document {
                 ),
             };
         } catch(err) {
-            Sentry.captureException(err);
+            console.log(err);
         } finally {
             sheet.seal();
         }
