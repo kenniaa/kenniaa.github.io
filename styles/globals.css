@@ -1,0 +1,32 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap');*/
+
+/*html,*/
+/*body {*/
+/*  padding: 0;*/
+/*  margin: 0;*/
+/*  background: linear-gradient(#ffb3ba, #fcd9b1,#8ecdcc,#acace6);*/
+/*  font-family: 'Inconsolata', monospace;*/
+/*}*/
+
+/*a {*/
+/*  color: inherit;*/
+/*  font-weight: inherit;*/
+/*  text-decoration: none;*/
+/*  background: transparent linear-gradient(to bottom, #ffb3ba 0%, #ffb3ba 100%) repeat-x 0 100%;*/
+/*  background-size: 3px 3px;*/
+/*}*/
+
+/*a:hover {*/
+/*  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ffb3ba' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");*/
+/*  background-position: 0 100%;*/
+/*  background-size: auto 5px;*/
+/*  background-repeat: repeat-x;*/
+/*}*/
+
+/*h3 {*/
+/*  font-size: 1.4em;*/
+/*}*/
+
+/** {*/
+/*  box-sizing: border-box;*/
+/*}*/
