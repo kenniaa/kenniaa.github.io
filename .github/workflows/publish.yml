@@ -32,5 +32,5 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: master
-          FOLDER: build
+          FOLDER: out
           CLEAN: true
