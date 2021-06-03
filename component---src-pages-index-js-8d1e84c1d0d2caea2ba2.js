@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{RXBc:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),i=t("Bl7J"),c=t("vrFN");n.default=function(){return l.a.createElement(i.a,null,l.a.createElement(c.a,{title:"Home"}),l.a.createElement("h3",null,"[woman cartwheeling emoji]"),l.a.createElement("p",null,"Snappy byline listing 3 things that describe me: "))}}}]);
-//# sourceMappingURL=component---src-pages-index-js-8d1e84c1d0d2caea2ba2.js.map
