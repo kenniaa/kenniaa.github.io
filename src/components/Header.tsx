@@ -1,7 +1,8 @@
 import * as React from 'react';
-import Link from 'next/link'
+import IconButton from './IconButton';
 import styled  from 'styled-components';
 import ThemeContext from '../components/GlobalContext'
+import Cloud from './Cloud';
 
 interface HeaderProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -12,28 +13,19 @@ class Header extends React.Component<HeaderProps, {}> {
         return (
             <header className={className}>
                 <Title>
-                    Kenia
+                    Kenia <Cloud />
                 </Title>
 
                 <Nav>
-                    <Link href='/about'>
-                        <a>About</a>
-                    </Link>
-                    <Link href='/stuff'>
-                        <a>Stuff</a>
-                    </Link>
-                    <Link href='/contact'>
-                        <a>Contact</a>
-                    </Link>
                     <ThemeContext.Consumer>
                         {({ switchTheme, theme }) => (
-                            <ToggleButton onClick={() => switchTheme(theme)}>
+                            <IconButton onClick={() => switchTheme(theme)}>
                                 {theme === 'light' ?
                                     <>🌞</>
                                     :
                                     <>🌙</>
                                 }
-                            </ToggleButton>
+                            </IconButton>
 
                         )}
                     </ThemeContext.Consumer>
@@ -53,22 +45,12 @@ export default styled(Header)`
   padding: 1.45rem 1.0875rem;
 `;
 
-const Title = styled.h3`
+const Title = styled.h1`
   font-weight: 700;
+  font-size: 1.5em;
+  color: ${props => props.theme.title}
 `;
 
 const Nav = styled.nav`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(3em, 1fr));
-  grid-gap: 0.5em;
-  justify-items: center;
-  align-items: center;
-  flex: 0 1 40%;
   font-size: 16px;
-`;
-
-const ToggleButton = styled.button`
-  background: none;
-  border: none;
-  font-size: 1.15em;
 `;

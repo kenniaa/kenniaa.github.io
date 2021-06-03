@@ -1,5 +1,6 @@
 import * as React from 'react';
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from 'next/link';
 import styled from 'styled-components';
 import Header from './Header';
 
@@ -26,9 +27,13 @@ export default class Layout extends React.Component<LayoutProps, {}> {
                 </Main>
 
                 <Footer>
-                    <a href='http://github.com/kenniaa'>
-                        github
-                    </a>
+                    <Link href='http://github.com/kenniaa'>
+                        <a target="_blank">github</a>
+                    </Link>
+
+                    <Link href='https://www.linkedin.com/in/kenia-c-6b19bb50'>
+                        <a target="_blank">linkedin</a>
+                    </Link>
                 </Footer>
             </Container>
         )
@@ -38,10 +43,6 @@ export default class Layout extends React.Component<LayoutProps, {}> {
 const Main = styled.main`
   padding: 1.45rem 1.0875rem;
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   margin: 1em 0 0 0;
   max-width: 960px;
   width: 100%;
@@ -50,11 +51,16 @@ const Main = styled.main`
 const Footer = styled.footer`
   width: 100%;
   height: 100px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid ${props => props.theme.borderColor};
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 0 1em 0;
+  
+  > a {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 `;
 
 const Container = styled.div`

@@ -1,19 +1,25 @@
 const themes = {
     light: {
-        body: '#FFF',
+        body: '#f8f8f8',
         text: '#363537',
-        toggleBorder: '#FFF',
-        background: '#363537',
-        gradient: 'linear-gradient(#ffb3ba, #fcd9b1)',
-        buttonFocus: '#ff63a8'
+        linkFocus: '#63689B',
+        linkHover: '#D99191',
+        title: '#63689B',
+        background: '#f8f8f8',
+        gradient: 'linear-gradient(#F2BFB3, #D99191)',
+        borderColor: '#eaeaea',
+        linkUnderline: '#63689B'
     },
     dark: {
-        body: '#1a1a1a',
-        text: '#e2e2e2',
-        toggleBorder: '#6B8096',
-        background: '#999',
-        gradient: 'linear-gradient(#acace6, #acace6)',
-        buttonFocus: '#ceb1ff'
+        body: '#111111',
+        text: '#b8b8b8',
+        linkFocus: '#F2BFB3',
+        linkHover: '#B4B6D9',
+        title: '#D99191',
+        background: '#111111',
+        gradient: 'linear-gradient(#63689B, #B4B6D9)',
+        borderColor: '#161616',
+        linkUnderline: '#D99191'
     }
 }
 

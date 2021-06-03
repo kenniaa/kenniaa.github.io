@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import themes from './Themes';
 
 export const GlobalStyles = createGlobalStyle`
   *,
@@ -14,31 +15,32 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Inconsolata', monospace;
   }
 
+  p {
+    line-height: 1.3em;
+  }
+
   a {
     color: inherit;
     font-weight: inherit;
-    text-decoration: none;
-    background: transparent linear-gradient(to bottom, #fcd9b1 0%, #fcd9b1 100%) repeat-x 0 100%;
-    background-size: 3px 3px;
-
+    text-decoration: underline;
+    text-decoration-color: ${({ theme }) => theme.linkUnderline};
+    text-decoration-thickness: 1.5px;
+   
     &:focus {
-      outline: 1px dashed #FFFFFF;
+      outline: 1px dashed ${({ theme }) => theme.linkFocus};
       outline-offset: 2px;
-      outline-color: currentColor;
     }
   }
 
   a:hover {
-    background-position: 0 100%;
-    background-size: auto 16px;
-    background-repeat: repeat-x;
+    text-decoration-color: ${({ theme }) => theme.linkHover};
   }
 
   button {
     cursor: pointer;
 
     &:focus {
-      outline: 1px dashed ${({ theme }) => theme.buttonFocus};
+      outline: 1px dashed ${({ theme }) => theme.linkFocus};
       outline-offset: 3px;
     }
   }
