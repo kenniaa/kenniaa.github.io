@@ -12,7 +12,7 @@ const themes = {
     },
     dark: {
         body: '#111111',
-        text: '#b8b8b8',
+        text: '#dbdbdb',
         linkFocus: '#F2BFB3',
         linkHover: '#B4B6D9',
         title: '#D99191',

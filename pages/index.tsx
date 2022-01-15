@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export default function Home() {
   return (
-    <Layout title='Home'>
+    <Layout title='Kenia'>
         <p>
             I'm a frontend developer based in Brooklyn working on <a href='https://gomdrop.com' target='_blank'>GOMdrop</a>,
             a platform that helps people buy and sell hobby items.
