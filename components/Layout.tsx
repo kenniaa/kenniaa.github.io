@@ -34,6 +34,10 @@ export default class Layout extends React.Component<LayoutProps, {}> {
                     <Link href='https://www.linkedin.com/in/kenia-c-6b19bb50'>
                         <a target="_blank">linkedin</a>
                     </Link>
+
+                    <Link href='https://poly.work/kennia'>
+                        <a target="_blank">polywork</a>
+                    </Link>
                 </Footer>
             </Container>
         )
@@ -41,9 +45,8 @@ export default class Layout extends React.Component<LayoutProps, {}> {
 }
 
 const Main = styled.main`
-  padding: 1.45rem 1.0875rem;
+  padding: 1rem;
   flex: 1;
-  margin: 1em 0 0 0;
   max-width: 960px;
   width: 100%;
 `;
@@ -64,7 +67,7 @@ const Footer = styled.footer`
 `;
 
 const Container = styled.div`
-  min-height: 100vh;
+  min-height: calc(100vh - 2em);
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;

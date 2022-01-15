@@ -8,7 +8,7 @@ export default function Home() {
             I'm a frontend developer based in Brooklyn working on <a href='https://gomdrop.com' target='_blank'>GOMdrop</a>,
             a platform that helps people buy and sell hobby items.
         </p>
-        <br />
+
         <p>
            Things I'm into: React Hooks, styled-components, Storybook, downshift
         </p>
@@ -18,7 +18,11 @@ export default function Home() {
         </p>
 
         <p>
-            Things I'm doing: reading Dune, working on GOMdrop's direct pay feature
+            Things I'm working on: direct pay feature for GOMdrop
+        </p>
+
+        <p>
+            Things I'm doing: reading Children of Dune
         </p>
     </Layout>
   )

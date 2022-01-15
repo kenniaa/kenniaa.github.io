@@ -42,7 +42,7 @@ export default styled(Header)`
   margin: 0 auto;
   max-width: 960px;
   width: 100%;
-  padding: 1.45rem 1.0875rem;
+  padding: 1.45rem 1.0875rem 0;
 `;
 
 const Title = styled.h1`
