@@ -6,9 +6,9 @@
     [
       "styled-components",
       {
-        "ssr": false,
+        "ssr": true,
         "displayName": true,
-        "preprocess": true
+        "preprocess": false
       }
     ]
   ]
