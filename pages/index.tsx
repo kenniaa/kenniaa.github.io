@@ -5,16 +5,20 @@ export default function Home() {
   return (
     <Layout title='Home'>
         <p>
-            I'm a frontend engineer at <a href='https://edlio.com' target='_blank'>Edlio</a>, but occasionally I work
-            on the backend. In my spare time I also run <a href='https://gomdrop.com/' target='_blank'>GOMdrop</a>,
+            I'm a frontend developer based in Brooklyn working on <a href='https://gomdrop.com' target='_blank'>GOMdrop</a>,
             a platform that helps people buy and sell hobby items.
         </p>
+        <br />
         <p>
-            Right now I'm really into React, styled-components, and Storybook.
+           Things I'm into: React Hooks, styled-components, Storybook, downshift
         </p>
 
         <p>
-            I care about accessibility and responsive design.
+           Things I care about: accessibility, responsive design, soft colors
+        </p>
+
+        <p>
+            Things I'm doing: reading Dune, working on GOMdrop's direct pay feature
         </p>
     </Layout>
   )
