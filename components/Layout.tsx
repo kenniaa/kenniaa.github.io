@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import styled from 'styled-components';
 import Header from './Header';
+import StyledComponentsRegistry from '../lib/registry';
 
 interface LayoutProps {
     children?: any,
@@ -23,7 +24,9 @@ export default class Layout extends React.Component<LayoutProps, {}> {
                 <Header />
 
                 <Main>
-                    {children}
+                    <StyledComponentsRegistry>
+                        {children}
+                    </StyledComponentsRegistry>
                 </Main>
 
                 <Footer>

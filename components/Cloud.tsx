@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import IconButton from './IconButton';
+import dynamic from 'next/dynamic';
 
 const CLOUDS = [
     '☁️',
@@ -19,7 +20,7 @@ const getRandomCloud = () => {
     return CLOUDS[index];
 }
 
-export default () => {
+const Cloud = () => {
     const [cloud, setCloud] = useState(getRandomCloud());
 
     const handleCloudClick = () => {
@@ -36,3 +37,7 @@ export default () => {
         {cloud}
     </IconButton>
 };
+
+export default dynamic(async () => Cloud, {
+    ssr: false,
+});
