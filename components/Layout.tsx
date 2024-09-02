@@ -27,16 +27,16 @@ export default class Layout extends React.Component<LayoutProps, {}> {
                 </Main>
 
                 <Footer>
-                    <Link href='http://github.com/kenniaa'>
-                        <a target="_blank">github</a>
+                    <Link href='http://github.com/kenniaa' target='_blank'>
+                        github
                     </Link>
 
-                    <Link href='https://www.linkedin.com/in/kenia-c-6b19bb50'>
-                        <a target="_blank">linkedin</a>
+                    <Link href='https://www.linkedin.com/in/kenia-c-6b19bb50'  target='_blank'>
+                        linkedin
                     </Link>
 
-                    <Link href='https://poly.work/kennia'>
-                        <a target="_blank">polywork</a>
+                    <Link href='https://poly.work/kennia'  target='_blank'>
+                        polywork
                     </Link>
                 </Footer>
             </Container>

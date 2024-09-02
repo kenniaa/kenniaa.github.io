@@ -1,11 +1,12 @@
 import App from 'next/app';
+import dynamic from "next/dynamic";
 import { ThemeProvider } from 'styled-components';
 
 import { GlobalStyles } from '../components/GlobalStyles';
 import ThemeContext from '../components/GlobalContext'
 import themes from '../components/Themes'
 
-export default class MyApp extends App {
+class MyApp extends App {
     constructor() {
         super();
 
@@ -46,3 +47,7 @@ export default class MyApp extends App {
         )
     }
 }
+
+export default dynamic(() => Promise.resolve(MyApp), {
+    ssr: false,
+});

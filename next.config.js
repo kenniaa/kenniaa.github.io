@@ -1,5 +1,8 @@
 const isGHPages = process.env.NODE_ENV === 'pages';
 
 module.exports = {
-    assetPrefix: isGHPages ? '/' : './'
+    assetPrefix: isGHPages ? '/' : './',
+    compiler: {
+        styledComponents: true,
+    }
 };
