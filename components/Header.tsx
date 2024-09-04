@@ -13,7 +13,7 @@ class Header extends React.Component<HeaderProps, {}> {
         return (
             <header className={className}>
                 <Title>
-                    Kenia <Cloud />
+                    <a href='/'>Kenia</a> <Cloud />
                 </Title>
 
                 <Nav>
@@ -48,7 +48,11 @@ export default styled(Header)`
 const Title = styled.h1`
   font-weight: 700;
   font-size: 1.5em;
-  color: ${props => props.theme.title}
+  color: ${props => props.theme.title};
+    
+  a {
+      text-decoration: none;
+  }
 `;
 
 const Nav = styled.nav`

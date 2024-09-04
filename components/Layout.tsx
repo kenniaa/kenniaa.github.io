@@ -37,10 +37,6 @@ export default class Layout extends React.Component<LayoutProps, {}> {
                     <Link href='https://www.linkedin.com/in/kenia-c-6b19bb50'  target='_blank'>
                         linkedin
                     </Link>
-
-                    <Link href='https://poly.work/kennia'  target='_blank'>
-                        polywork
-                    </Link>
                 </Footer>
             </Container>
         )
