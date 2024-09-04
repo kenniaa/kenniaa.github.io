@@ -24,7 +24,7 @@ function Social() {
 
             <Image
                 src='/subscriptions.png'
-                alt='public profile screenshot'
+                alt='gomdrop subscription banner showing relevant information'
                 width='600'
                 height='600'
                 sizes="100vw"
@@ -40,7 +40,7 @@ function Social() {
             <SocialGrid>
                 <Image
                     src='/password forms.png'
-                    alt='public profile screenshot'
+                    alt='gomdrop password protection instagram post'
                     width='600'
                     height='600'
                     sizes="100vw"
@@ -54,7 +54,7 @@ function Social() {
 
                 <Image
                     src='/profile images.png'
-                    alt='public profile screenshot'
+                    alt='gomdrop public profile instagram post'
                     width='600'
                     height='600'
                     sizes="100vw"
@@ -68,7 +68,7 @@ function Social() {
 
                 <Image
                     src='/email activity.png'
-                    alt='public profile screenshot'
+                    alt='gomdrop email activity instagram post'
                     width='600'
                     height='600'
                     sizes="100vw"
@@ -82,7 +82,7 @@ function Social() {
 
                 <Image
                     src='/captionsImages.png'
-                    alt='public profile screenshot'
+                    alt='gomdrop image and description instagram post'
                     width='600'
                     height='600'
                     sizes="100vw"

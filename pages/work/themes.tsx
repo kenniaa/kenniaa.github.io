@@ -21,7 +21,7 @@ function Themes() {
 
             <Image
                 src='/darkTheme.png'
-                alt='public profile screenshot'
+                alt='gomdrop settings with the dark theme selected'
                 width='600'
                 height='600'
                 sizes="100vw"
@@ -36,7 +36,7 @@ function Themes() {
 
             <Image
                 src='/lightTheme.png'
-                alt='public profile screenshot'
+                alt='gomdrop settings with the light theme seleted'
                 width='600'
                 height='600'
                 sizes="100vw"
@@ -45,7 +45,7 @@ function Themes() {
                     borderRadius: '16px',
                     width: '100%',
                     height: 'auto',
-                    marginBottom: '1em',
+                    marginBottom: '2em',
                 }}
             />
 
@@ -53,7 +53,7 @@ function Themes() {
                 <div>
                     <Image
                         src='/styleDictionary.png'
-                        alt='public profile screenshot'
+                        alt='style directory design tokens'
                         width='600'
                         height='600'
                         sizes="100vw"
@@ -96,14 +96,14 @@ function Themes() {
                     </div>
 
                     <div>
-                        Currently over ___ users have enabled the dark theme.
+                        Currently over 10,000 users have enabled the dark theme.
                     </div>
                 </Description>
 
                 <div>
                     <Image
                         src='/theme.png'
-                        alt='public profile screenshot'
+                        alt='organization of a gomdrop theme'
                         width='600'
                         height='600'
                         sizes="100vw"

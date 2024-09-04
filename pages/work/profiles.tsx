@@ -16,7 +16,7 @@ function Profiles() {
 
               <div>
                   In order to address this, I designed and implemented a public profile feature that we released to
-                  our subscribers as a beta feature.
+                  our subscribers.
               </div>
 
               <div>
@@ -38,7 +38,7 @@ function Profiles() {
 
           <Image
               src='/publicProfile.png'
-              alt='public profile screenshot'
+              alt='screenshot of a gomdrop public profile'
               width='600'
               height='600'
               sizes="100vw"
@@ -59,7 +59,8 @@ function Profiles() {
 
               <div>
                   The goal was to create a pronoun selector that included as many known pronouns as possible without
-                  preventing the user from creating their own unique pronouns.
+                  preventing the user from creating their own unique pronouns. I felt strongly about giving users the means
+                  to most accurately describe their preferred pronouns.
               </div>
 
               <div>
@@ -70,7 +71,7 @@ function Profiles() {
 
           <Image
               src='/pronouns.png'
-              alt='public profile screenshot'
+              alt='screenshot showing the pronoun options in the gomdrop pronoun selector'
               width='600'
               height='600'
               sizes="100vw"
@@ -96,7 +97,38 @@ function Profiles() {
 
           <Image
               src='/directory.png'
-              alt='public profile screenshot'
+              alt='the gomdrop public form directory showing an open filter menu'
+              width='600'
+              height='600'
+              sizes="100vw"
+              // Make the image display full width
+              style={{
+                  borderRadius: '16px',
+                  width: '100%',
+                  height: 'auto',
+              }}
+          />
+
+          <Description>
+              <div>
+                After we released profiles, we received feedback from users who found that the single
+                description box was too limited for how they wanted to present information.
+              </div>
+
+              <div>
+                  To address these concerns, I created a customizable tab navigation component which
+                  would allow users to create custom tabs for any extra information they may have.
+              </div>
+
+              <div>
+                  The component is keyboard accessible and general enough to be used on other GOMdrop
+                  pages. I plan to add drag and drop to it so that users can rearrange the tabs.
+              </div>
+          </Description>
+
+          <Image
+              src='/customTabs.png'
+              alt='gomdrop public profile showing an open tab navigation setting menu'
               width='600'
               height='600'
               sizes="100vw"

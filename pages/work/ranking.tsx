@@ -16,16 +16,16 @@ function Ranking() {
                 </div>
 
                 <div>
-                    I created a simple Google form to ask our users questions about their process of ranking options
+                    To research and design this feature from a product perspective I decided to work closely
+                    with the GOMdrop community. I gathered information from our users about their process of ranking options
                     as well as how they formatted this question before they used GOMdrop and after they started using GOMdrop.
                     I then created a simple proof of concept and brought it to them for feedback. After more back and forth,
-                    I settled on the final design which is currently being used on ___ number of forms.
+                    I settled on the final design which is currently being used on 7000 forms.
                 </div>
 
                 <div>
-                    I used the React library <a href='https://github.com/clauderic/dnd-kit' target='_blank'>dnd kit</a>
-                    to add drag and drop support to the sortable options. This library also handles keyboard
-                    support for greater accessibility.
+                    I used the React library <a href='https://github.com/clauderic/dnd-kit' target='_blank'>dnd kit</a> to add
+                    drag and drop support to the sortable options. This library also handles keyboard support for greater accessibility.
                 </div>
 
                 <div>
@@ -42,7 +42,7 @@ function Ranking() {
 
             <Image
                 src='/ranking1.png'
-                alt='public profile screenshot'
+                alt='an open item ranking panel on a gomdrop public form showing all rankable options'
                 width='600'
                 height='600'
                 sizes="100vw"
