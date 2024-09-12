@@ -45,91 +45,71 @@ function Themes() {
                     borderRadius: '16px',
                     width: '100%',
                     height: 'auto',
-                    marginBottom: '2em',
                 }}
             />
 
-            <Code>
+            <Description>
                 <div>
-                    <Image
-                        src='/styleDictionary.png'
-                        alt='style directory design tokens'
-                        width='600'
-                        height='600'
-                        sizes="100vw"
-                        // Make the image display full width
-                        style={{
-                            borderRadius: '16px',
-                            width: '100%',
-                            height: 'auto',
-                        }}
-                    />
+                    It was important to create design tokens that can be shared across platforms and that
+                    can be easily interpreted by developers. My first instinct was to just toss some hex codes around
+                    and call it a day, but in order to create a theme feature that could scale into something
+                    more creative, it was necessary to sit down and actually think about what each color was actually
+                    accomplishing in the theme.
                 </div>
 
-                <Description>
-                    <div>
-                        It was important to create design tokens that can be shared across platforms and that
-                        can be easily interpreted by developers. My first instinct was to just toss some hex codes around
-                        and call it a day, but in order to create a theme feature that could scale into something
-                        more creative, it was necessary to sit down and actually think about what each color was actually
-                        accomplishing in the theme.
-                    </div>
+                <div>
+                    Though the design tokens I created were enough for our current 2 themes, I am far from
+                    satisfied with the system as a whole. More work and research is necessary to ensure that
+                    GOMdrop's design system is cohesive.
+                </div>
+            </Description>
 
-                    <div>
-                        Though the design tokens I created were enough for our current 2 themes, I am far from
-                        satisfied with the system as a whole. More work and research is necessary to ensure that
-                        GOMdrop's design system is cohesive.
-                    </div>
-                </Description>
-            </Code>
+            <Image
+                src='/styleDictionary.png'
+                alt='style directory design tokens'
+                width='600'
+                height='600'
+                sizes="100vw"
+                // Make the image display full width
+                style={{
+                    borderRadius: '16px',
+                    width: '100%',
+                    height: 'auto',
+                }}
+            />
 
-            <CodeV2>
-                <Description>
-                    <div>
-                        After creating the design tokens I used Styled Component's theme provider
-                        to pass in the user selected theme. An additional context is used to fetch and set themes.
-                    </div>
-
-                    <div>
-                        After the theme is selected, it is stored in the user's cookies. This allows us to access the
-                        theme upon them accessing the site. Themes are also stored in the user's document in our Mongo database.
-                    </div>
-
-                    <div>
-                        Currently over 10,000 users have enabled the dark theme.
-                    </div>
-                </Description>
+            <Description>
+                <div>
+                    After creating the design tokens I used Styled Component's theme provider
+                    to pass in the user selected theme. An additional context is used to fetch and set themes.
+                </div>
 
                 <div>
-                    <Image
-                        src='/theme.png'
-                        alt='organization of a gomdrop theme'
-                        width='600'
-                        height='600'
-                        sizes="100vw"
-                        // Make the image display full width
-                        style={{
-                            borderRadius: '16px',
-                            width: '100%',
-                            height: 'auto',
-                        }}
-                    />
+                    After the theme is selected, it is stored in the user's cookies. This allows us to access the
+                    theme upon them accessing the site. Themes are also stored in the user's document in our Mongo database.
                 </div>
-            </CodeV2>
+
+                <div>
+                    Currently over 10,000 users have enabled the dark theme.
+                </div>
+            </Description>
+
+            <Image
+                src='/theme.png'
+                alt='organization of a gomdrop theme'
+                width='600'
+                height='600'
+                sizes="100vw"
+                // Make the image display full width
+                style={{
+                    borderRadius: '16px',
+                    width: '100%',
+                    height: 'auto',
+                }}
+            />
         </Layout>
     )
 }
-
-const Code = styled.div`
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 1em;
-    margin-bottom: 1em;
-`
-
-const CodeV2 = styled(Code)`
-    grid-template-columns: 1fr 2fr;
-`;
 
 const Description = styled.div`
     display: flex;
